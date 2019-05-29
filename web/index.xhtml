@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html 
+    xmlns = "http://www.w3.org/1999/xhtml"
+    xmlns:h= "http://xmlns.jcp.org/jsf/html"
+    >
+    <h:head>
+        <title>Calculadora Bean</title>
+    </h:head>
+    <h:body>
+        
+        <h:form>
+            <h:inputText value="#{beanCalculadora.a}"/>
+            +
+            <h:inputText value="#{beanCalculadora.b}"/>
+            <h:commandButton action="#{beanCalculadora.somar}" value="=" />
+        </h:form>
+        <h:form>
+            <h:inputText value="#{beanCalculadora.a}"/>
+            -
+            <h:inputText value="#{beanCalculadora.b}"/>
+            <h:commandButton action="#{beanCalculadora.subtrair}" value="="/>
+        </h:form>
+        <h:form>
+            <h:inputText value="#{beanCalculadora.a}"/>
+            *
+            <h:inputText value="#{beanCalculadora.b}"/>
+            <h:commandButton action="#{beanCalculadora.multiplicar}" value="="/>
+        </h:form>
+        <h:form>
+            <h:inputText value="#{beanCalculadora.a}"/>
+            /
+            <h:inputText value="#{beanCalculadora.b}"/>
+            <h:commandButton action="#{beanCalculadora.dividir}"
+                             value="="/>
+        </h:form>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h:form>
+            <h:inputText value="#{beanCalculadora.a}"/>
+            <h:inputText value="#{beanCalculadora.op}"/>
+            <h:inputText value="#{beanCalculadora.b}"/>
+            <h:commandButton action="#{beanCalculadora.efetuarCalc()}" value="=" />
+        </h:form>
+    </h:body>
+</html>
